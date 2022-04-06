@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'qpick-icon-font';
+  src:  url('../fonts/qpick-icon-font.eot');
+  src:  url('../fonts/qpick-icon-font.eot') format('embedded-opentype'),
+        url('../fonts/qpick-icon-font.ttf') format('truetype'),
+        url('../fonts/qpick-icon-font.woff') format('woff'),
+        url('../fonts/qpick-icon-font.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'qpick-icon-font' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e900";
+  color: #838383;
+}
+.icon-delete:before {
+  content: "\e901";
+  color: #df6464;
+}
+.icon-lang:before {
+  content: "\e902";
+}
+.icon-likes:before {
+  content: "\e903";
+  color: #838383;
+}
+.icon-star:before {
+  content: "\e904";
+  color: #ffce7f;
+}
+.icon-Telegram:before {
+  content: "\e905";
+}
+.icon-VK:before {
+  content: "\e906";
+}
+.icon-Whatsapp:before {
+  content: "\e907";
+}
