@@ -20,7 +20,6 @@ export default function createCatalog() {
     sectionProduct.append(productWrapper);
 
     section.value.map( (elem) => {
-      console.log(elem);
 
       const productCard = document.createElement('div');
       productCard.classList.add('product__card');
@@ -67,6 +66,7 @@ export default function createCatalog() {
       productButton.classList.add('product__button');
       productButton.innerHTML = 'Купить';
       productButton.type = 'button';
+      productButton.dataset.id = elem.id;
       productContent.append(productButton);
     })
   })
