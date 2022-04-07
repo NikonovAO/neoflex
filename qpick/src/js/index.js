@@ -1,7 +1,8 @@
-import { products } from './products.js';
+import createCatalog from './createCatalog.js';
 
 function app() {
-  console.log(products)
+
+  createCatalog();
 
 }
 

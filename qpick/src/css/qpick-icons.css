@@ -49,6 +49,7 @@
 .icon-star:before {
   content: "\e904";
   color: #ffce7f;
+  font-size: 24px;
 }
 
 .icon-telegram:before {

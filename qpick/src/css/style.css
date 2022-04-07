@@ -4,8 +4,11 @@
   --font-logo: normal 700 25px/30px 'Montserrat';
   --font-counter: normal 500 15px/18px 'Montserrat';
   --font-link: normal 400 17px/21px 'Montserrat';
+  --font-section: normal 600 20px/24px 'Montserrat';
+  --font-price: normal 600 17px/21px 'Montserrat';
   --color-background: #EAEAEA;
   --color-white: #FFFFFF;
+  --color-gray: #838383;
   --color-orange: #FFA542;
   --color-black: #000000;
   --size-block: 1440px;
@@ -34,9 +37,7 @@ body {
 }
 
 .header {
-  /*max-width: var(--size-block);*/
   height: 60px;
-  /*margin: 0 auto;*/
   background-color: var(--color-background);
 }
 
@@ -88,20 +89,103 @@ body {
 .main {
   flex: 1 1 auto;
   background-color: var(--color-background);
-  border: 1px solid black;
 }
 
 .main__wrapper {
+  max-width: var(--size-wrapper);
   margin: 0 auto;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.section__name {
+  font: var(--font-section)
+}
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.product__card {
+  width: 350px;
+  height: 407px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 12px 21px 10px;
+}
+
+.product__img-wrapper {
+  width: 220px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 54px;
+}
+
+.product__content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 23px;
+}
+
+.product__name {
+  width: 60%;
+  overflow-wrap: break-word;
+  font: var(--font-price);
+}
+
+.product__price {
+  width: 40%;
+  text-align: right;
+  font: var(--font-price);
+  color: var(--color-orange);
+}
+
+.product__rate {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__rating {
+  font: var(--font-price);
+  color: var(--color-gray);
+}
+
+.product__button {
+  margin-left: auto;
+  font: var(--font-price);
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.product__button:hover {
+  color: var(--color-orange);
 }
 
 /*FOOTER*/
 
 .footer {
-  /*max-width: var(--size-block);*/
   height: 150px;
-  /*margin: 0 auto;*/
   background-color: var(--color-background);
 }
 
