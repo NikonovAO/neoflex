@@ -1,4 +1,5 @@
 import { cart } from "./addingToCart.js";
+import dispayAmountProducts from './displayAmountProducts.js';
 
 export default function runSessionStorage() {
 
@@ -13,6 +14,7 @@ export default function runSessionStorage() {
       cartParseJSON.forEach( element => {
         cart.push(element);
       });
+      dispayAmountProducts();
     }
   })
 }

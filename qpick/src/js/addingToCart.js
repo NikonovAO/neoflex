@@ -1,4 +1,5 @@
 import { products } from './products.js';
+import dispayAmountProducts from './displayAmountProducts.js';
 
 const cart = [];
 
@@ -16,10 +17,11 @@ export default function addingToCart() {
       section.value.map( elem => {
         if(elem.id === id && !cart.includes(elem)) {
           cart.push(elem);
-          console.log(cart)
+          cart[cart.length-1].amount = 1;
         }
       })
     })
+    dispayAmountProducts();
   }
 }
 
