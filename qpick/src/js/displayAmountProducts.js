@@ -1,8 +1,8 @@
 import { cart } from "./addingToCart.js";
 
-export default function dispayAmountProducts() {
-
-  const amountProducts = cart.reduce( (prev, current) => {
+export default function displayAmountProducts() {
+  const cartParseJSON = JSON.parse(sessionStorage.getItem('cart'));
+  const amountProducts = cartParseJSON.reduce( (prev, current) => {
     return prev + current.amount;
   }, 0);
 

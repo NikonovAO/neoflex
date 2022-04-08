@@ -4,11 +4,17 @@
     --font-link: normal 400 17px/21px 'Montserrat';
     --font-section: normal 600 20px/24px 'Montserrat';
     --font-price: normal 600 17px/21px 'Montserrat';
+    --font-card-name: normal 500 17px/21px 'Montserrat';
+    --font-product-price: normal 600 15px/18px 'Montserrat';
     --color-background: #EAEAEA;
     --color-white: #FFFFFF;
     --color-gray: #838383;
+    --color-gray-light: #AAAAAA;
+    --color-dark-gray: #1C1C27;
+    --color-orange-light: #FFCE7F;
     --color-orange: #FFA542;
     --color-black: #000000;
+    --color-total: #101010;
     --size-block: 1440px;
     --size-wrapper: 1110px;
   }

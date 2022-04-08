@@ -1,5 +1,5 @@
 import { products } from './products.js';
-import dispayAmountProducts from './displayAmountProducts.js';
+import displayAmountProducts from './displayAmountProducts.js';
 
 const cart = [];
 
@@ -12,7 +12,7 @@ export default function addingToCart() {
   })
 
   function addToCart(event) {
-    const id = event.target.dataset.id
+    const id = event.target.dataset.id;
     products.map( section => {
       section.value.map( elem => {
         if(elem.id === id && !cart.includes(elem)) {
@@ -21,7 +21,7 @@ export default function addingToCart() {
         }
       })
     })
-    dispayAmountProducts();
+    displayAmountProducts();
   }
 }
 

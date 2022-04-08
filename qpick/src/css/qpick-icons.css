@@ -30,30 +30,41 @@
   font-size: 24px;
 }
 
-.icon-delete:before {
+.icon-decrement:before {
   content: "\e901";
+  color: #fff;
+}
+
+.icon-delete:before {
+  content: "\e902";
   color: #df6464;
+  font-size: 21px;
+}
+
+.icon-increment:before {
+  content: "\e903";
+  color: #fff;
 }
 
 .icon-lang:before {
-  content: "\e902";
+  content: "\e904";
   font-size: 19px;
 }
 
 .icon-likes:before {
-  content: "\e903";
+  content: "\e905";
   color: #838383;
   font-size: 22px;
 }
 
 .icon-star:before {
-  content: "\e904";
+  content: "\e906";
   color: #ffce7f;
   font-size: 24px;
 }
 
 .icon-telegram:before {
-  content: "\e905";
+  content: "\e907";
   font-size: 32px;
   color: #000000;
   transition: 0.5s;
@@ -64,7 +75,7 @@
 }
 
 .icon-vk:before {
-  content: "\e906";
+  content: "\e908";
   color: #000000;
   font-size: 32px;
   transition: 0.5s;
@@ -75,7 +86,7 @@
 }
 
 .icon-whatsapp:before {
-  content: "\e907";
+  content: "\e909";
   font-size: 32px;
   color: #000000;
   transition: 0.5s;
