@@ -35,7 +35,7 @@ export default function createCartContent() {
 
       const cardImage = document.createElement('img');
       cardImage.classList.add('card__img');
-      cardImage.src = `../../${product.img}`;
+      cardImage.src = `../../.${product.img}`;
       cardImage.alt = product.title;
       cardImageWrapper.append(cardImage);
 

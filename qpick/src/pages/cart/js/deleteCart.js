@@ -14,7 +14,6 @@ export default function deleteCart() {
 
   function deleteCard(event) {
     const id = event.target.dataset.id;
-    console.log(event.target);
     for(let i = 0; i < cartParseJSON.length; i++) {
       if(cartParseJSON[i].id === id) {
         cartParseJSON.splice(i, 1)
