@@ -13,6 +13,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (max-width: 1200px) {
+    .header__wrapper {
+      padding: 0 20px;
+    }
+  }
   
   .logo__link {
     color: var(--color-total);

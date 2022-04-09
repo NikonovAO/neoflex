@@ -8,9 +8,9 @@ export default function calcTotalSum() {
       return prev + current.amount * current.price;
     }, 0);
   
-    totalSumElement.innerHTML = `${total} &#x20bd;`;
+    totalSumElement.innerHTML = `&#x20bd; ${total}`;
   } else {
-    totalSumElement.innerHTML = `0 &#x20bd;`;
+    totalSumElement.innerHTML = `&#x20bd; 0`;
   }
   
 }

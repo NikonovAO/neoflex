@@ -16,6 +16,12 @@
   padding-bottom: 20px;
 }
 
+@media (max-width: 1200px) {
+  .main__wrapper {
+    padding: 0 20px 20px;
+  }
+}
+
 .cart__title {
   font: var(--font-section);
   padding: 30px 0 12px;
@@ -24,6 +30,13 @@
 .cart__container {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+  .cart__container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cart__list {
@@ -45,11 +58,32 @@
   padding: 18px;
 }
 
+@media (max-width: 1050px) {
+  .cart__card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart__card {
+    width: 300px;
+    height: 310px;
+  }
+}
+
 .card__product {
   height: 136px;
   display: flex;
   align-items: center;
   gap: 25px;
+}
+
+@media (max-width: 480px) {
+  .card__product {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .card__img-wrapper {
@@ -143,6 +177,12 @@
   position: relative;
 }
 
+@media (max-width: 480px) {
+  .total {
+    width: 300px;
+  }
+}
+
 .total__title, .total__value {
   font: var(--font-product-price);
   color: var(--color-black);
@@ -163,6 +203,12 @@
   color: var(--color-white);
   cursor: pointer;
   transition: all 0.5s;
+}
+
+@media (max-width: 480px) {
+  .total__issue {
+    width: 300px;
+  }
 }
 
 .total__issue:hover {
