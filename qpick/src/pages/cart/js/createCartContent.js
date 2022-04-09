@@ -87,7 +87,7 @@ export default function createCartContent() {
       const cardTotal = document.createElement('div');
       cardTotal.classList.add('card__total');
       cardTotal.innerHTML = `${product.price} &#x20bd;`;
-      cardTotal.type = 'button';
+      cardTotal.dataset.id = product.id;
       cartCard.append(cardTotal);
     })
   }

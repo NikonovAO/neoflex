@@ -1,5 +1,6 @@
 import calcTotalSum from './calcTotalSum.js';
 import displayAmountCart from './displayAmountCart.js';
+import displayCardTotal from './displayCardTotal.js';
 
 export default function changeAmount() {
 
@@ -26,6 +27,7 @@ export default function changeAmount() {
     sessionStorage.setItem('cart', JSON.stringify(cart));
     calcTotalSum();
     displayAmountCart();
+    displayCardTotal();
   }
 
   const incrementButtons = document.querySelectorAll('.card__increment');
@@ -47,5 +49,6 @@ export default function changeAmount() {
     sessionStorage.setItem('cart', JSON.stringify(cart));
     calcTotalSum();
     displayAmountCart();
+    displayCardTotal();
   }
 }
