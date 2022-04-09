@@ -1,12 +1,12 @@
 import createCatalog from './createCatalog.js';
+import displayAmountProducts from './displayAmountProducts.js';
 import addingToCart from './addingToCart.js';
-import runSessionStorage from './sessionStorage.js';
 
 function app() {
 
-  runSessionStorage();
-
   createCatalog();
+
+  displayAmountProducts();
 
   addingToCart();
 

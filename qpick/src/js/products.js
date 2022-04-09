@@ -7,6 +7,7 @@ const headphones = [
     price: 2927,
     sale: 0,
     priceNew: 2927,
+    amount: 1
   },
   {
     id: 'headphones_02',
@@ -16,6 +17,7 @@ const headphones = [
     price: 2327,
     sale: 0,
     priceNew: undefined,
+    amount: 1
   },
   {
     id: 'headphones_03',
@@ -25,6 +27,7 @@ const headphones = [
     price: 2327,
     sale: 0,
     priceNew: undefined,
+    amount: 1
   },
   {
     id: 'headphones_04',
@@ -34,6 +37,7 @@ const headphones = [
     price: 3527,
     sale: 20,
     priceNew: 2927,
+    amount: 1
   },
   {
     id: 'headphones_05',
@@ -43,6 +47,7 @@ const headphones = [
     price: 2327,
     sale: undefined,
     priceNew: undefined,
+    amount: 1
   },
   {
     id: 'headphones_06',
@@ -52,6 +57,7 @@ const headphones = [
     price: 2327,
     sale: 0,
     priceNew: undefined,
+    amount: 1
   }
 ]
 
@@ -64,6 +70,7 @@ const wirelessHeadphones = [
     price: 9527,
     sale: 0,
     priceNew: undefined,
+    amount: 1
   },
   {
     id: 'wheadphones_02',
@@ -73,6 +80,7 @@ const wirelessHeadphones = [
     price: 6527,
     sale: 0,
     priceNew: undefined,
+    amount: 1
   },
   {
     id: 'wheadphones_03',
@@ -82,6 +90,7 @@ const wirelessHeadphones = [
     price: 7527,
     sale: 0,
     priceNew: undefined,
+    amount: 1
   },
 ]
 
