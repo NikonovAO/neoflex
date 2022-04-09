@@ -1,0 +1,59 @@
+@import url('./constants.css');
+
+.header {
+    height: 60px;
+    background-color: var(--color-background);
+  }
+  
+  .header__wrapper {
+    max-width: var(--size-wrapper);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+    .header__wrapper {
+      padding: 0 20px;
+    }
+  }
+  
+  .logo__link {
+    color: var(--color-total);
+  }
+
+  .header__logo {
+    font: var(--font-logo);
+  }
+  
+  .nav-tabs__list {
+    display: flex;
+    gap: 8px;
+    margin-right: 7px;
+  }
+  
+  .nav-tabs__item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav-tabs__counter {
+    width: 17.4px;
+    height: 17.4px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font: var(--font-counter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: -6px;
+  }

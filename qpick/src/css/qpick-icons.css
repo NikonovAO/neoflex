@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'qpick-icon-font';
+  src:  url('../fonts/qpick-icon-font.eot');
+  src:  url('../fonts/qpick-icon-font.eot') format('embedded-opentype'),
+        url('../fonts/qpick-icon-font.ttf') format('truetype'),
+        url('../fonts/qpick-icon-font.woff') format('woff'),
+        url('../fonts/qpick-icon-font.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'qpick-icon-font' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart:before {
+  content: "\e900";
+  color: #838383;
+  font-size: 24px;
+}
+
+.icon-decrement:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-delete:before {
+  content: "\e902";
+  color: #df6464;
+  font-size: 21px;
+}
+
+.icon-increment:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.icon-lang:before {
+  content: "\e904";
+  font-size: 19px;
+}
+
+.icon-likes:before {
+  content: "\e905";
+  color: #838383;
+  font-size: 22px;
+}
+
+.icon-star:before {
+  content: "\e906";
+  color: #ffce7f;
+  font-size: 24px;
+}
+
+.icon-telegram:before {
+  content: "\e907";
+  font-size: 32px;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.icon-telegram:hover.icon-telegram:before {
+  color: #FFA542;
+}
+
+.icon-vk:before {
+  content: "\e908";
+  color: #000000;
+  font-size: 32px;
+  transition: 0.5s;
+}
+
+.icon-vk:hover.icon-vk:before {
+  color: #FFA542;
+}
+
+.icon-whatsapp:before {
+  content: "\e909";
+  font-size: 32px;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.icon-whatsapp:hover.icon-whatsapp:before {
+  color: #FFA542;
+}
