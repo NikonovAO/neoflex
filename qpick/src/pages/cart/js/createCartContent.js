@@ -1,3 +1,4 @@
+import deleteCart from './deleteCart.js';
 
 export default function createCartContent() {
 
@@ -79,7 +80,7 @@ export default function createCartContent() {
 
       const cardDelete = document.createElement('button');
       cardDelete.classList.add('card__delete');
-      cardDelete.innerHTML = `<span class="icon-delete"></span>`;
+      cardDelete.innerHTML = `<span class="icon-delete" data-id='${product.id}'></span>`;
       cardDelete.type = 'button';
       cardDelete.dataset.id = product.id;
       cartCard.append(cardDelete);
@@ -115,4 +116,5 @@ export default function createCartContent() {
   totalButton.type = 'button';
   total.append(totalButton);
 
+  deleteCart();
 }

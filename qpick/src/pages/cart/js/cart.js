@@ -15,6 +15,7 @@ function app() {
   calcTotalSum();
 
   changeAmount();
+
 }
 
 app();

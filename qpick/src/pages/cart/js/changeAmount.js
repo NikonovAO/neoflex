@@ -8,7 +8,7 @@ export default function changeAmount() {
   const decrementButtons = document.querySelectorAll('.card__decrement');
 
   decrementButtons.forEach(btn => {
-    btn.addEventListener('click', decrementAmount, {useCapture : false})
+    btn.addEventListener('click', decrementAmount)
   })
 
   function decrementAmount(event) {
