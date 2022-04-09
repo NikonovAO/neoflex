@@ -14,6 +14,10 @@
     align-items: center;
   }
   
+  .logo__link {
+    color: var(--color-total);
+  }
+
   .header__logo {
     font: var(--font-logo);
   }

@@ -57,7 +57,6 @@ export default function createCartContent() {
 
     const cardDecrement = document.createElement('button');
     cardDecrement.classList.add('card__decrement');
-    //cardDecrement.innerHTML = `<span class="icon-decrement"></span>`;
     cardDecrement.innerHTML = `&#8211;`;
     cardDecrement.type = 'button';
     cardDecrement.dataset.id = product.id;
@@ -82,17 +81,15 @@ export default function createCartContent() {
     cardDelete.innerHTML = `<span class="icon-delete"></span>`;
     cardDelete.type = 'button';
     cardDelete.dataset.id = product.id;
-    cartCard.append(cardDelete); //sdsdsdsds
+    cartCard.append(cardDelete);
 
     const cardTotal = document.createElement('div');
     cardTotal.classList.add('card__total');
     cardTotal.innerHTML = `${product.price} &#x20bd;`;
     cardTotal.type = 'button';
     cartCard.append(cardTotal);
-
   })
 
-  /* total*/
   const issueBlock = document.createElement('div');
   issueBlock.classList.add('cart__issue');
   cartContainer.append(issueBlock);
@@ -108,7 +105,7 @@ export default function createCartContent() {
 
   const totalValue = document.createElement('span');
   totalValue.classList.add('total__value');
-  totalValue.innerHTML = `0 &#x20bd;`;  //добавить общую сумму
+  totalValue.innerHTML = `0 &#x20bd;`;
   total.append(totalValue);
 
   const totalButton = document.createElement('button');

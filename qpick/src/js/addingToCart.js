@@ -21,6 +21,7 @@ export default function addingToCart() {
         }
       })
     })
+    sessionStorage.setItem('cart', JSON.stringify(cart));
     displayAmountProducts();
   }
 }

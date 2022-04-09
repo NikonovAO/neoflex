@@ -1,5 +1,5 @@
 import calcTotalSum from './calcTotalSum.js';
-import displayAmountProducts from '../../../js/displayAmountProducts.js';
+//import displayAmountProducts from '../../../js/displayAmountProducts.js';
 import displayAmountCart from './displayAmountCart.js';
 
 export default function changeAmount() {
@@ -26,7 +26,7 @@ export default function changeAmount() {
 
     sessionStorage.setItem('cart', JSON.stringify(cart));
     calcTotalSum();
-    displayAmountProducts();
+    //displayAmountProducts();
     displayAmountCart();
   }
 
@@ -48,7 +48,7 @@ export default function changeAmount() {
 
     sessionStorage.setItem('cart', JSON.stringify(cart));
     calcTotalSum();
-    displayAmountProducts();
+    //displayAmountProducts();
     displayAmountCart();
   }
 }
